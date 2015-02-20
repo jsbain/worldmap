@@ -41,7 +41,7 @@
                     this.c = this.c || this.attr("fill");
                     this.stop().animate({fill: "#bacabd"}, 500);
                     //JB added next line
-                    window.location.assign('world://'+worldmap.names[this.attr("title")]);
+                    window.location.assign('world://'+encodeURIComponent(worldmap.names[this.attr("title")]));
                 },
                     out = function () {
                         this.stop().animate({fill: this.c}, 500);
